@@ -1,0 +1,8 @@
+NAME: Jordan Castillo
+DATE: 10 / 15 / 17
+EMAIL: jtcastil@calpoly.edu
+
+
+Everything worked fine, except I seemed to have some bugs in the CARS dataset, in part 1.
+When the 'mpg' was NULL, for some reason it was still passing as if the mpg was correct.
+Aside from this, everything is working correctly.
