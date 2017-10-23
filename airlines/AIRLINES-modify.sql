@@ -6,7 +6,7 @@
 
 * Creation Date : 22-10-2017
 
-* Last Modified : Mon 23 Oct 2017 11:40:42 AM DST
+* Last Modified : Mon 23 Oct 2017 11:43:11 AM DST
 
 * Created By :  Jordan Castillo
 
@@ -21,8 +21,8 @@ WHERE (sourceAirport != 'AKI') AND (destAirport != 'AKI');
 UPDATE flightsList
 JOIN airlinesList ON flightsList.airlineID = airlinesList.airlineID 
 SET flightsList.flightNum = flightNum + 2000 
-WHERE (airlinesList.airlineName != Continental Airlines) 
-AND (airlinesList.airlineName != AirTran Airways) 
-AND (airlinesList.airlineName != Virgin America);
+WHERE (airlinesList.airlineName != 'Continental Airlines') 
+AND (airlinesList.airlineName != 'AirTran Airways') 
+AND (airlinesList.airlineName != 'Virgin America');
 
 
