@@ -6,7 +6,7 @@
 
 * Creation Date : 22-10-2017
 
-* Last Modified : Mon 23 Oct 2017 01:18:58 PM DST
+* Last Modified : Mon 23 Oct 2017 01:20:21 PM PDT
 
 * Created By :  Jordan Castillo
 
@@ -36,7 +36,7 @@ f2.flightNum = f2.flightNum - 1
 WHERE mod(f1.flightNum,2) = 0
 AND f1.airlineID != 7
 AND f1.airlineID != 10
-AND f1.airlineID 1= 12;
+AND f1.airlineID != 12;
 
 
 
