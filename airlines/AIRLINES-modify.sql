@@ -6,7 +6,7 @@
 
 * Creation Date : 22-10-2017
 
-* Last Modified : Mon 23 Oct 2017 12:45:37 PM DST
+* Last Modified : Mon 23 Oct 2017 12:48:53 PM DST
 
 * Created By :  Jordan Castillo
 
@@ -32,7 +32,6 @@ AND flight1.destAirport = flight2.sourceAirport
 AND flight1.airlineID = flight2.airlineID
 SET flight1.flightNum = flight1.flightNum + 1,
 	flight2.flightNum = flight2.flightNum - 1,
-WHERE 
-		(SELECT MOD(flight1.flightNum,2) == 0);
+WHERE mod(flight1.flightNum,2) = 0);
 
 
