@@ -6,7 +6,7 @@
 
 * Creation Date : 22-10-2017
 
-* Last Modified : Mon 23 Oct 2017 12:52:58 PM PDT
+* Last Modified : Mon 23 Oct 2017 01:08:31 PM DST
 
 * Created By :  Jordan Castillo
 
@@ -25,13 +25,14 @@ WHERE (airlinesList.airlineName != 'Continental Airlines')
 AND (airlinesList.airlineName != 'AirTran Airways') 
 AND (airlinesList.airlineName != 'Virgin America');
 --4)
-UPDATE flightsList flight1
-JOIN flightsList flight2 
-ON flight1.sourceAirport = flight2.destAirport
-AND flight1.destAirport = flight2.sourceAirport
-AND flight1.airlineID = flight2.airlineID
-SET flight1.flightNum = flight1.flightNum + 1,
-	flight2.flightNum = flight2.flightNum - 1
-WHERE mod(flight1.flightNum,2) = 0;
+--      this command alters every table, not just the ones i want
+--UPDATE flightsList flight1
+--JOIN flightsList flight2 
+--ON flight1.sourceAirport = flight2.destAirport
+--AND flight1.destAirport = flight2.sourceAirport
+--AND flight1.airlineID = flight2.airlineID
+--SET flight1.flightNum = flight1.flightNum + 1,
+--	flight2.flightNum = flight2.flightNum - 1
+--WHERE mod(flight1.flightNum,2) = 0;
 
 
