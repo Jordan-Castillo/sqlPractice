@@ -6,7 +6,7 @@
 
 * Creation Date : 22-10-2017
 
-* Last Modified : Mon 23 Oct 2017 06:18:18 PM DST
+* Last Modified : Mon 23 Oct 2017 06:21:49 PM DST
 
 * Created By :  Jordan Castillo
 
@@ -44,4 +44,10 @@ ON FL.airlineID = AL.airlineID
 SET FL.airlineID = 7
 WHERE (FL.airlineID != 10)
 AND (FL.airlineID != 12);
+--6) display contents of the flights database
+SELECT *
+FROM flightsList
+ORDER BY airlineID, flightNum;
+
+
 
