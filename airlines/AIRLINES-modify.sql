@@ -6,7 +6,7 @@
 
 * Creation Date : 22-10-2017
 
-* Last Modified : Mon 23 Oct 2017 01:20:21 PM PDT
+* Last Modified : Mon 23 Oct 2017 06:11:45 PM DST
 
 * Created By :  Jordan Castillo
 
@@ -37,6 +37,6 @@ WHERE mod(f1.flightNum,2) = 0
 AND f1.airlineID != 7
 AND f1.airlineID != 10
 AND f1.airlineID != 12;
-
+--5) replace airlineID for all tuples in flightsList that isnt 'AirTran' or 'Virgin' with 'Continental'
 
 
