@@ -6,7 +6,7 @@
 
 * Creation Date : 22-10-2017
 
-* Last Modified : Mon 23 Oct 2017 06:11:45 PM DST
+* Last Modified : Mon 23 Oct 2017 06:18:18 PM DST
 
 * Created By :  Jordan Castillo
 
@@ -38,5 +38,10 @@ AND f1.airlineID != 7
 AND f1.airlineID != 10
 AND f1.airlineID != 12;
 --5) replace airlineID for all tuples in flightsList that isnt 'AirTran' or 'Virgin' with 'Continental'
-
+UPDATE flightsList FL
+JOIN airlinesList AL
+ON FL.airlineID = AL.airlineID
+SET FL.airlineID = 7
+WHERE (FL.airlineID != 10)
+AND (FL.airlineID != 12);
 
